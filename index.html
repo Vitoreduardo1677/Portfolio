@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfólio - Vitor Eduardo Prá</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+<style>
+  /* Reset básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #000814, #a4d0ff);
+    color: #cbd5e1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    background: rgba(0, 16, 40, 0.8);
+    box-shadow: 0 4px 20px rgba(0, 16, 40, 0.7);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  header h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: #00bfff;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 12px #00bfffaa;
+  }
+
+  header p {
+    margin-top: 0.5rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #90caf9;
+  }
+
+  main {
+    flex-grow: 1;
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+  }
+
+  section {
+    margin-bottom: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #64b5f6;
+    margin-bottom: 1rem;
+    border-left: 6px solid #00bfff;
+    padding-left: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #a0b9d9;
+  }
+
+  /* Habilidades */
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .skill {
+    background: linear-gradient(135deg, #0077b6, #00bfff);
+    color: #001d3d;
+    padding: 0.7rem 1.4rem;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px #00bfff70;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: default;
+  }
+
+  .skill:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 18px #00d0ffcc;
+  }
+
+  /* Projetos */
+  .projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .project-card {
+    background: rgba(0, 47, 85, 0.8);
+    border-radius: 18px;
+    padding: 1.5rem;
+    box-shadow: 0 0 15px #00bfffaa;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: default;
+  }
+
+  .project-card:hover {
+    box-shadow: 0 0 25px #00d0ffdd;
+    transform: translateY(-6px);
+  }
+
+  .project-card h3 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #00bfff;
+    margin-bottom: 0.75rem;
+  }
+
+  .project-card p {
+    font-size: 1rem;
+    color: #b0c9ea;
+    line-height: 1.4;
+  }
+
+  /* Rodapé */
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    color: #789cc9;
+    background: rgba(0, 16, 40, 0.85);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0 -4px 20px rgba(0, 16, 40, 0.7);
+  }
+
+  /* Responsividade */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2.2rem;
+      letter-spacing: 0.08em;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    main {
+      margin: 2rem 1rem;
+      padding: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Vitor Eduardo Prá</h1>
+  <p>Estudante na escola CEDUP Perfeito Manoel de Aguiar | Cursante em Desenvolvimento de Sistemas | Gosto de tecnologia e games</p>
+</header>
+
+<main>
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Olá! Meu nome é Vitor Eduardo Prá, tenho 15 anos e sou estudante na escola CEDUP Perfeito Manoel de Aguiar
+    e realizo o curso de Desenvolvimento de Sistemas. Adoro coisas relacionadas a tecnologia e games. Também faço
+    curso de inglês na Rockfeller Lenguage Center e sou quase formado.</p>
+  </section>
+
+  <section id="habilidades">
+  <h2>Habilidades</h2>
+  <div class="skills-list">
+    <a href="Portugol.html" class="skill">PORTUGOL</a>
+    <a href="HTML.html" class="skill">HTML</a>
+    <a href="Python.html" class="skill">PYTHON (APRENDENDO)</a>
+    <a href="Inglês.html" class="skill">INGLÊS</a>
+  </div>
+</section>
+
+<section id="projetos">
+  <h2>Projetos</h2>
+  <div class="projects-list">
+    
+    <a href="Hackathon.html" class="project-card-link">
+      <div class="project-card">
+        <h3>Hackathon</h3>
+        <p>
+          O Hackathon é uma maratona que acontece na escola CEDUP Prefeito Manoel de Aguiar anualmente com os 1º anos tanto de Desenvolvimento de Sistemas
+          quanto de Administração. Clique aqui para saber mais.
+        </p>
+      </div>
+    </a>
+
+    <a href="DropSmart.html" class="project-card-link">
+      <div class="project-card">
+        <h3>DropSmart</h3>
+        <p>
+          O DropSmart foi a solução que achamos para resolver o problema dado no Hackathon, um jogo educativo. Clique aqui para saber mais.
+        </p>
+      </div>
+    </a>
+
+    <a href="Desafio.VIVO.html" class="project-card-link">
+      <div class="project-card">
+        <h3>Desafio dos Dados VIVO</h3>
+        <p>
+          O Desafio dos Dados VIVO é um evento que ocorre anualmente, porém com escolas de todo o Brasil, e uma delas é o CEDUP Prefeito Manoel de Aguiar.
+          Clique aqui para saber mais.
+        </p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  &copy; 2025 Vitor Eduardo Prá. Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
